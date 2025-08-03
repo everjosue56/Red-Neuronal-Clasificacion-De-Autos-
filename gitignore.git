@@ -10,6 +10,19 @@ __pycache__/
 *.tmp
 *.ipynb_checkpoints/
 
+# Ignorar todo el dataset
+/dataset/train/
+/dataset/valid/
+/dataset/test/
+
+# Opcionalmente, ignora cualquier tipo de archivo de imagen por si los colocas en otros lugares también
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+
+
 # Entornos virtuales
 .env/
 .venv/

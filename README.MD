@@ -57,7 +57,7 @@ El modelo está compuesto por diferentes capas de una red neuronal convolucional
 
 **Clonar el repositorio**
 ```bash
-aun vacio
+git clone https://github.com/everjosue56/Red-Neuronal-Clasificacion-De-Autos-.git
 ```
 **Instalar libreria tensorflow**
 ```bash
