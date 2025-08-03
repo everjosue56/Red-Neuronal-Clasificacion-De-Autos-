@@ -1,0 +1,66 @@
+# ---------------------------------
+# General Python
+# ---------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.log
+*.swp
+*.bak
+*.tmp
+*.ipynb_checkpoints/
+
+# Entornos virtuales
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de configuración personales
+*.env
+*.DS_Store
+*.idea/
+*.vscode/
+
+# ---------------------------------
+# TensorFlow / Keras
+# ---------------------------------
+# Archivos de modelos pesados
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+*.tflite
+*.npz
+
+# Directorios creados por TensorFlow
+__pycache__/
+logs/
+checkpoints/
+
+# ---------------------------------
+# Datos y dataset local
+# ---------------------------------
+dataset/
+data/
+*.zip
+*.tar.gz
+*.rar
+
+# ---------------------------------
+# Archivos auxiliares
+# ---------------------------------
+*.csv
+*.xlsx
+*.pkl
+*.json
+*.db
+*.sqlite
+
+# ---------------------------------
+# Jupyter Notebook y Colab
+# ---------------------------------
+.ipynb_checkpoints
