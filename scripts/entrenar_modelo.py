@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Configuración
+# Configuracion
 img_height, img_width = 128, 128
 batch_size = 32
 
 train_dir = 'dataset/train'
 valid_dir = 'dataset/valid'
-test_dir = 'dataset/test'  # Asegúrate de tener este directorio con imágenes de prueba
+test_dir = 'dataset/test'   
 
 # Cargar datos
 datagen = ImageDataGenerator(rescale=1./255)
@@ -35,10 +35,10 @@ test_generator = datagen.flow_from_directory(
     target_size=(img_height, img_width),
     batch_size=batch_size,
     class_mode='categorical',
-    shuffle=False  # Muy importante para que el orden se mantenga
+    shuffle=False 
 )
 
-# Construcción del modelo CNN
+# Construccion del modelo CNN
 model = models.Sequential([
     layers.Conv2D(32, (3,3), activation='relu', input_shape=(img_height, img_width, 3)),
     layers.MaxPooling2D(2,2),

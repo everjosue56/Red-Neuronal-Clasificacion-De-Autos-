@@ -5,11 +5,11 @@ from tensorflow.keras.models import load_model
 # Cargar modelo
 model = load_model("modelos/modelo_carros.h5")
 
-# Lista de clases — debe coincidir con la que usaste en entrenamiento y el orden en train_data.class_indices
+# Lista de clases — debe coincidir con la que da al cargar los datos 
 clases = ['Camioneta', 'Pick-Up', 'Turismo']
 
 # Ruta de la imagen a predecir
-img_path = "samples/pickup.jpg"
+img_path = "samples/corolla.jpg"
 
 # Cargar y preprocesar la imagen
 img = image.load_img(img_path, target_size=(128, 128))  # tamaño igual al del entrenamiento
