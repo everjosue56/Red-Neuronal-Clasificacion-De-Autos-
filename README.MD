@@ -64,17 +64,9 @@ git clone https://github.com/everjosue56/Red-Neuronal-Clasificacion-De-Autos-.gi
 ```bash
 pip install tensorflow tensorflow-datasets numpy matplotlib scikit-learn pandas ttkbootstrap
 ```
-**Crear carpeta para el dataset**
-```bash
-mkdir dataset
-```
 **Descargar dataset**
 ```bash
 https://www.kaggle.com/datasets/ademboukhris/cars-body-type-cropped
-```
-**Crear carpeta para los modelos**
-```bash
-mkdir models
 ```
 
 ## 🛠️ Estructura del Proyecto
@@ -87,7 +79,7 @@ cars_classificator/
 │   ├── train/               # Imagenes de entrenamiento
 │   └── valid/               # Imagenes de validación
 │
-├── models/                  # Modelos entrenados guardados (se crean al ejecutar el script de entrenamiento)
+├── models/                  # Modelos guardados (el modelo se crea al ejecutar el entrenamiento)
 │
 ├── results/                 # Graficas y resultados del entrenamiento
 │
