@@ -1,11 +1,6 @@
 # Los modelos no se suben al repositorio ya que se generan con el script de entrenamiento
 *.h5
 
-# No se debe subir las carpetas del dataset al repositorio (el usuario debe descargarlo y colocarlo manualmente)
-dataset/test
-dataset/train
-dataset/valid
-
 ### Audio ###
 *.aif
 *.iff
