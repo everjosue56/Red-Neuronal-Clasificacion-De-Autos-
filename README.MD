@@ -50,6 +50,7 @@ El modelo está compuesto por diferentes capas de una red neuronal convolucional
 | 🔶 **TensorFlow / Keras** | Framework principal para construir, entrenar y evaluar la red neuronal. |
 | 🔢 **NumPy**        | Manejo eficiente de arreglos multidimensionales y operaciones numéricas.     |
 | 📊 **Matplotlib**   | Visualización de datos y métricas del modelo (como precisión o pérdida).     |
+| 🎨 **ttkbootstrap**   | Librería de temas y estilos para la creación de interfaces gráficas. |
 
 ---
 
@@ -59,13 +60,74 @@ El modelo está compuesto por diferentes capas de una red neuronal convolucional
 ```bash
 git clone https://github.com/everjosue56/Red-Neuronal-Clasificacion-De-Autos-.git
 ```
-**Instalar libreria tensorflow**
+**Instalar librerias**
 ```bash
-pip install tensorflow numpy matplotlib scikit-learn pandas
+pip install tensorflow tensorflow-datasets numpy matplotlib scikit-learn pandas ttkbootstrap
+```
+**Crear carpeta para el dataset**
+```bash
+mkdir dataset
 ```
 **Descargar dataset**
 ```bash
 https://www.kaggle.com/datasets/ademboukhris/cars-body-type-cropped
 ```
+**Crear carpeta para los modelos**
+```bash
+mkdir models
+```
 
+## 🛠️ Estructura del Proyecto
 
+```
+cars_classificator/
+│
+├── dataset/                 # Datasets y datos procesados
+│   ├── test/                # Imagenes de prueba
+│   ├── train/               # Imagenes de entrenamiento
+│   └── valid/               # Imagenes de validación
+│
+├── models/                  # Modelos entrenados guardados (se crean al ejecutar el script de entrenamiento)
+│
+├── results/                 # Graficas y resultados del entrenamiento
+│
+├── samples/                 # Imagenes nuevas para predicciones
+│
+├── scripts/                 # Módulos de utilidades
+│   ├── load_data.py         # Carga y preprocesamiento de datos
+│   ├── model_builder.py     # Script de carga del modelo entrenado
+|   ├── model_trainer.py     # Script de entrenamiento
+│   └── prediction.py        # Script de predicción
+│
+├── .gitignore               # Archivo de ignorados
+├── main.py                  # Script principal de interfaz gráfica
+└── README.md                # Este archivo
+```
+
+---
+
+## Instrucciones de ejecución
+
+**1. Cargar y preprocesar el dataset**
+
+```bash
+python scripts/load_data.py
+```
+
+**2. Crear y entrenar el modelo**
+
+```bash
+python scripts/model_trainer.py
+```
+
+**3. Cargar el modelo entrenado**
+
+```bash
+python scripts/model_builder.py
+```
+
+**4. Poner a prueba el modelo**
+
+```bash
+python scripts/prediction.py
+```
