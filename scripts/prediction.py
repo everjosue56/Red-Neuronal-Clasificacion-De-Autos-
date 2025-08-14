@@ -10,7 +10,7 @@ model = tf.keras.models.load_model("models/cars_classificator.h5")
 clases = ['Camioneta', 'Pick-Up', 'Turismo']
 
 # Ruta de la imagen a predecir
-img_path = "samples/corolla.jpg"
+img_path = "samples/22r1982.jpg"
 
 # Cargar y preprocesar la imagen
 img = tf.keras.preprocessing.image.load_img(img_path, target_size=(128, 128))  # tamaño igual al del entrenamiento
